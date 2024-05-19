@@ -196,7 +196,8 @@ body {
     width:700px;
     height: 100%;
     transition: 3s;
-  
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 2s;
     pointer-events: none;
 }
 
@@ -293,5 +294,10 @@ body {
 @keyframes showRight {
     100% {
         width:0;
+    }
+}
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
     }
 }
